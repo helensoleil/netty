@@ -33,6 +33,7 @@ import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
 
 public class SocketRstTest extends AbstractSocketTest {
+
     protected void assertRstOnCloseException(IOException cause, Channel clientChannel) {
         if (Locale.getDefault() == Locale.US || Locale.getDefault() == Locale.UK) {
             assertTrue("actual message: " + cause.getMessage(),
